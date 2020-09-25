@@ -1,0 +1,18 @@
+---
+
+msvc2015_choco_package:
+  - visualstudio2015community
+
+vscode_distribution: vscode
+vscode_extensions:
+  - editorconfig.editorconfig
+  - ms-vscode.cpptools
+  - ms-vscode.azurecli
+  - ms-python.python
+  - mtxr.sqltools
+  - redhat.java
+  - vscjava.vscode-maven
+  - vscode-git
+
+# For Boost
+win_local_dir: 'C:/Local'
