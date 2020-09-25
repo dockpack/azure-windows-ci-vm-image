@@ -1,0 +1,25 @@
+---
+- name: setup new Azure box
+  hosts: default
+  gather_facts: false
+
+  vars:
+    ansible_shell_type: powershell
+    ansible_shell_executable: none
+    ansible_user: packer
+    ansible_password: "{{ lookup('env','WINRMPASS') }}"
+    ansible_port: 5986
+    ansible_connection: winrm
+    ansible_winrm_transport: ntlm
+    ansible_winrm_server_cert_validation: ignore
+
+  vars_files:
+    - dependencies.yml
+    - options.yml
+
+  roles:
+    - role: win_buildtools
+    - role: win_boost
+    - role: win_miniconda
+    - role: win_vscode
+    - role: ansible_windows_java
