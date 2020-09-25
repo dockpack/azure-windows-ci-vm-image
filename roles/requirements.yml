@@ -1,0 +1,12 @@
+---
+
+- src: bbaassssiiee.ansible_windows_java
+  name: ansible_windows_java
+- src: dockpack.win_boost
+  name: win_boost
+- src: dockpack.win_buildtools
+  name: win_buildtools
+- src: dockpack.win_miniconda
+  name: win_miniconda
+- src: dockpack.win_vscode
+  name: win_vscode
