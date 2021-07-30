@@ -1,6 +1,6 @@
 ---
 - name: setup new Azure box
-  hosts: default
+  hosts: all
   gather_facts: false
 
   vars:
@@ -19,7 +19,7 @@
 
   roles:
     - role: win_buildtools
-    - role: win_boost
-    - role: win_miniconda
+    - role: base_boost
+    - role: base_conda
     - role: win_vscode
     - role: ansible_windows_java
