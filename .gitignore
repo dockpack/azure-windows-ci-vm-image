@@ -1,2 +1,4 @@
 ansible/hosts
 roles/*win*
+roles/base_*
+.vagrant
