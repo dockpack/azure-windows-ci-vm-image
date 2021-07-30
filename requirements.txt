@@ -1,0 +1,8 @@
+beautifulsoup4
+ansible[azure]
+ansible-lint
+packaging
+pywinrm
+pypsrp
+requests
+
