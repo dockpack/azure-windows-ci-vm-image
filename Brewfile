@@ -1,0 +1,5 @@
+cask "vagrant"
+brew "packer"
+brew "jq"
+brew "python"
+brew "azure-cli"
